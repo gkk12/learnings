@@ -17,9 +17,9 @@ Advantages of using Delegates:
 - In Dictionary, you can only store same types of elements.
  
 Syntax:  
- Dictionary<int, string> My_dict1 = new Dictionary<int, string>();  
- My_dict1.Add(10, "Welcome");  
- My_dict1.Add(11, "Gautham");    
+ 	  Dictionary<int, string> My_dict1 = new Dictionary<int, string>();  
+ 	  My_dict1.Add(10, "Welcome");  
+ 	  My_dict1.Add(11, "Gautham");    
           foreach(KeyValuePair<int, string> ele1 in My_dict1) 
           { 
               Console.WriteLine("{0} and {1}", 
