@@ -32,7 +32,7 @@ Syntax:
 
  Searching through a value or a key:  
  - ContainsKey: This method is used to check whether the Dictionary<TKey,TValue> contains the specified key.
-	- ContainsValue: This method is used to check whether the Dictionary<TKey,TValue> contains a specific value.  
+ - ContainsValue: This method is used to check whether the Dictionary<TKey,TValue> contains a specific value.
  
           if (My_dict.ContainsKey(10)==true) 
           { 
