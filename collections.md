@@ -18,8 +18,9 @@ Advantages of using Delegates:
  
 Syntax:  
  	  Dictionary<int, string> My_dict1 = new Dictionary<int, string>();  
- 	  My_dict1.Add(10, "Welcome");  
- 	  My_dict1.Add(11, "Gautham");    
+    
+ 	        My_dict1.Add(10, "Welcome");  
+ 	        My_dict1.Add(11, "Gautham");      
           foreach(KeyValuePair<int, string> ele1 in My_dict1) 
           { 
               Console.WriteLine("{0} and {1}", 
@@ -31,8 +32,7 @@ Syntax:
  My_dict.Remove(1123);  
 
  Searching through a value or a key:  
- - ContainsKey: This method is used to check whether the Dictionary<TKey,TValue> contains the specified key.
- - ContainsValue: This method is used to check whether the Dictionary<TKey,TValue> contains a specific value.
+ - ContainsKey: This method is used to check whether the Dictionary<TKey,TValue> contains the specified key.  
  
           if (My_dict.ContainsKey(10)==true) 
           { 
@@ -44,6 +44,8 @@ Syntax:
                Console.WriteLine("Key is not found...!!"); 
           } 
             
+ - ContainsValue: This method is used to check whether the Dictionary<TKey,TValue> contains a specific value.  
+ 
           // Using ContainsValue() method to check 
           // the specified value is present or not  
           if (My_dict.ContainsValue("Gautham")==true) 
