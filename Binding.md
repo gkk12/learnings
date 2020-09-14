@@ -17,8 +17,8 @@ ListData = new List<string>()
 }
 
 XAML code:
-                <ListView x:Name="list" 
-                ItemsSource="{Binding ListData, Source={x:Reference MainPage}}"> 
-                </ListView> 
+          1.      <ListView x:Name="list" 
+          2.      ItemsSource="{Binding ListData, Source={x:Reference MainPage}}"> 
+          3.      </ListView> 
 
 
