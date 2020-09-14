@@ -6,12 +6,17 @@ public MainPage()
         {  
 ListData = new List<string>()  
             {  
-                "String a",  			XAML code:
-                "String b",  			 <ListView x:Name="list" 
-                "String c",  			 ItemsSource="{Binding ListData, Source={x:Reference MainPage}}"> 
-                "String d",  			 </ListView> 
+                "String a",  			
+                "String b",  			 
+                "String c",  			 
+                "String d",  			 
                 "String e",  
                 "String f",  
             };  
             InitializeComponent();  
 }
+
+XAML code:
+<ListView x:Name="list" 
+ItemsSource="{Binding ListData, Source={x:Reference MainPage}}"> 
+</ListView> 
