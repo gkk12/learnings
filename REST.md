@@ -15,4 +15,11 @@ a header, which allows the client to pass along information about the request
 a path to a resource
 an optional message body containing data
 
+GET - READ operation.
+POST- CREATE operation.
+PUT and PATCH-UPDATE operation.
+DELETE- DELETE operation.
+
+
+
 
