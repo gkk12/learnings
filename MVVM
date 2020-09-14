@@ -1,0 +1,8 @@
+Structural design pattern that separates objects into three distinct groups:
+
+1.Models hold application data. They’re usually structs or simple classes.
+2.Views display visual elements and controls on the screen. They’re typically subclasses of UIView.
+3.View models: This is where the majority of code-behind goes: data access, click events, complex calculationsetc. They are typically built to reflect a View..
+
+Eg: This pattern can be used to transform models into another representation for a view. For example, a Date can be transformed into a date-formatted String, 
+a Decimal into a currency-formatted String.
