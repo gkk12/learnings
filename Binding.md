@@ -20,3 +20,6 @@ XAML code:
 <ListView x:Name="list" 
 ItemsSource="{Binding ListData, Source={x:Reference MainPage}}"> 
 </ListView> 
+
+
+HI
