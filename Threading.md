@@ -37,6 +37,26 @@ The lock keyword calls Enter at the start of the block and Exit at the end
 In the above code, first when the thread enters the deposit method, it will lock transationlock. When another thread tries to enter withdraw, it will also try to lock , 
 which is already locked by the first thread. Second thread will have to wait for the first thread to release transactionlock. When the first thread leaves, then another 
 thread will lock transactionlock and will enter the critical section.
+public class Account
+{
+    private double balance = 0;
+    private object transactionLock = new object();
+    public void Deposit(double amount)
+    {
+        lock (transactionLock)
+        {
+            balance += amount;
+        }
+    }
+    public void Withdraw(double amount)
+    {
+       lock (transactionLock)
+        {
+            balance -= amount;
+        }
+    }
+}
+
 
 Why objects:
 .Net environment uses some optimizations, and sometimes if a memory location is accessed frequently, data is moved into CPU registers. When this happens, a thread 
